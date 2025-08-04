@@ -15,7 +15,7 @@ jobs:
         with:
           python-version: '3.x'
       - name: Install dependencies
-        run: pip install tweepy feedparser
+        run: pip install tweepy feedparser beautifulsoup4 requests
       - name: Run bot script
         run: python main.py
         env:
@@ -23,3 +23,4 @@ jobs:
           API_SECRET: ${{ secrets.API_SECRET }}
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           ACCESS_SECRET: ${{ secrets.ACCESS_SECRET }}
+          
